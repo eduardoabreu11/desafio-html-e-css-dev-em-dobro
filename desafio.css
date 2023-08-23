@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+
+
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft: hsl(300, 69%, 71%);
+}
+
+a {
+    text-decoration: none;
+}
+
+body{ 
+    
+    font-family: Open Sans;
+    font-weight: 400;
+    background-color: var(--Violet);
+    color: #FFF;
+    padding: 81PX; 
+    background-image: url(./imagens/bg-mobile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+header h1{
+    font-family: Poppins;
+    font-weight: 600;
+    margin-left: 5px;
+    font-size: 44px;
+    
+    
+}
+
+.icon-hearder{
+    width: 35px;
+    height: 35px;
+    
+}
+
+main {
+    display: flex;
+    height: 100vh;
+    margin-top: 101px;
+    max-height: 560px;
+    width: 100%;
+    
+    
+    
+    
+}
+
+
+.texto {
+    margin-top: 51px;
+    margin-left: 63px;
+    
+    
+}
+
+
+
+.texto h2{
+    font-size: 40px;
+    margin-bottom: 45px;
+}
+p{
+    font-size: 22px;
+    margin-bottom: 32px;
+}
+
+.area-texto{
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.botao{
+    display: flex;
+    border: 0px solid #000;
+    border-radius: 30px;
+    width: 203px;
+    height: 58px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    box-shadow: #000 2px 2px 15px;
+    transition: transform 100ms linear;
+    
+}
+.botao a {
+    color: var(--Violet);
+}
+
+.botao:hover{
+    transform: scale(1.08);
+    background-color: var(--Soft);
+}
+
+footer{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.icon-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 41px;
+    height: 38px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    margin: 11px;
+    transition: transform 100ms linear;
+    
+}
+.icon-footer:hover {
+    transform: scale(1.08);
+    background-color: var(--Soft);
+}
+.icon-footer a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+
+
+@media (max-width:1288px) {
+
+    body{
+        padding: 50px;
+        
+    }
+
+    main {
+        margin-top: 150px;
+        height: 800px;
+        margin-left: 50px;
+    }
+
+    footer {
+        margin-left: 50px;
+    }
+   
+    .area-texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px;
+        
+        
+    }
+
+    .area-texto img{
+        max-width: 600px;
+        
+    }
+
+    .texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    footer{
+        justify-content:center;
+        margin-top: 200px;
+        
+    }
+
+}
+
+@media (max-width:846px) {
+    header {
+        margin-bottom: 50px;
+    }
+    .area-texto img{
+        max-width: 450px;
+    }
+
+    .texto {
+        margin-right: 50px;
+    }
+}
+
+
+
+@media (max-width:645px) {
+
+    header {
+        margin-bottom: 180px;
+        
+    }
+    header h1{
+        font-size: 40px;
+    }
+
+    main {
+        height: 400px;
+       
+    }
+
+    .area-texto{
+        margin-right: 100px;
+    }
+
+    .area-texto img{
+        max-width: 350px;
+        
+    }
+
+    .texto h2{
+        font-size: 30px;
+    }
+    .texto p{
+        font-size: 15px;
+    }
+
+
+}
+
+@media (max-width:480px) {
+
+    body{
+        padding: 40px;
+
+    }
+    header h1{
+        font-size: 40px;
+    }
+    header {
+        
+        width: 500px;
+        margin-bottom: 400px;
+        
+    }
+
+    main {
+        height: 350px;
+    }
+
+   
+    .area-texto{
+        margin-bottom: 200px;
+    }
+   
+    .area-texto img{
+        max-width: 400px;
+    }
+
+    .texto h2{
+        font-size: 30px;
+    }
+
+    .texto p{
+        font-size: 21px;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .botao {
+        width: 250px;
+        height: 50px;
+        font-size: 15px;
+        margin-right: 25px;
+        margin-top: 15px;
+    }
+
+    .icon-footer{
+        
+        height: 40px;
+    }
+
+    footer{
+        margin-left: 80px;
+        width: 100%;
+    }
+
+    
+    
+
+   
+    
+
+}
+
+
+
+
